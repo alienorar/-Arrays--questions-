@@ -14,7 +14,7 @@
 //         } else {
 //             total2 += i
 //         }
-//         total3 = Math.abs(total1 - total2) 
+//         total3 = Math.abs(total1 - total2)
 
 //     }
 
@@ -102,28 +102,28 @@
 
 /* Task 6*/
 
-function finAdd(number, array) {
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] === number) {
+// function finAdd(number, array) {
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === number) {
 
-            return array;
-        }
-    }
-
-
-    array.push(number);
-    return array;
-}
+//             return array;
+//         }
+//     }
 
 
-let array = [3, 7, 1,];
-let number1 = 4;
-let number2 = 5;
+//     array.push(number);
+//     return array;
+// }
 
 
-console.log("Result for number 1", finAdd(number1, array));
+// let array = [3, 7, 1,];
+// let number1 = 4;
+// let number2 = 5;
 
-console.log("Result for number 2", finAdd(number2, array));
+
+// console.log("Result for number 1", finAdd(number1, array));
+
+// console.log("Result for number 2", finAdd(number2, array));
 
 
 
@@ -144,4 +144,67 @@ console.log("Result for number 2", finAdd(number2, array));
 // }
 // differenceNumber()
 
+// extra task 1
 
+// function sortDigits() {
+//     let number = +prompt("Enter a three-digit number:");
+
+//     console.log(number);
+
+//     let a = parseInt(number / 100);
+//     let b = parseInt(((number % 100) - (number % 10)) / 10);
+//     let c = parseInt(number % 10);
+
+//     if (a > b && b > c) {
+//         console.log(`${c} ${b} ${a}`);
+//     } else if (a > c && c > b) {
+//         console.log(`${b} ${c} ${a}`);
+//     } else if (b > a && a > c) {
+//         console.log(`${c} ${a} ${b}`);
+//     } else if (b > c && c > a) {
+//         console.log(`${a} ${c} ${b}`);
+//     } else if (c > a && a > b) {
+//         console.log(`${b} ${a} ${c}`);
+//     } else if (c > b && b > a) {
+//         console.log(`${a} ${b} ${c}`);
+//     }
+
+// }
+
+// sortDigits();
+
+
+// Extratask 2
+
+// const reverse = (number) => {
+//     if (number > 9 && number < 100) {
+//         let a = parseInt(number / 10)
+//         console.log(a);
+
+//         let b = parseInt(number % 10)
+//         console.log(b);
+
+//     console.log(`${b} ${a}`);
+//     }else{
+//         console.log("You must enter only double-digits number");
+//     }
+// }
+// reverse(23)
+
+// Extratask 3
+
+// const reverse = (number) => {
+//     if (number >= 100 && number < 1000) {
+//         let a = parseInt(number / 100);
+//         console.log(a);
+//         let b = parseInt(((number % 100) - (number % 10)) / 10);
+//         console.log(b);
+//         let c = parseInt(number % 10);
+//         console.log(c);
+
+//         console.log(`${c}  ${b} ${a}`);
+//     } else {
+//         console.log("You must enter only three-digits number");
+//     }
+// }
+// reverse(321)
